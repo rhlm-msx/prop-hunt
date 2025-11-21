@@ -19,9 +19,10 @@ flowchart TD
 ```mermaid
 
 kanban
-    find:
-        work
-
+    todo[Functionality to add]
+    working[Working on This Functionality]
+    completed[Completed]
+        (inv1)[Internal Navigation]
 ```
 
 

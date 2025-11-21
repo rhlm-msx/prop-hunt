@@ -12,14 +12,16 @@ server.get('Start', (req, res, next) => {
     var img_url = img!=null ? img.URL: null;
 
 
-    res.render('home/home', {
-        name: 'Start',
-        product: {
-            name: product.getName(),
-            url: img_url
-        }
+    // res.render('home/home', {
+    //     name: 'Start',
+    //     product: {
+    //         name: product.getName(),
+    //         url: img_url
+    //     }
 
-    })
+    // })
+
+    res.render('Find Data');
     next();
 });
 
