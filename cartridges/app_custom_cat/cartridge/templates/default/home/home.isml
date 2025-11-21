@@ -7,9 +7,11 @@
 <body class="bg-dark text-bg-dark"> 
     <div class="container py-5">
     <h1 class="text-center mb-4">Prop Hunt</h1> 
+<!--
     <div class="card p-5 my-5 fs-1">
         ${Resource.msg('homepage.description', 'home', null)}
     </div>
+-->
         <div id="textCardCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -31,5 +33,24 @@
             </div>
             <script src="${URLUtils.staticURL('/js/bootstrap.bundle.min.js')}"> </script> 
 
-            <a class="badge btn-primary text-btn-primary" href="${URLUtils.url('AboutUs-Show')}">About US</a>
+
+
+            <div class='container'>
+            <h2>Explore Our Popular Products</h2>
+            <div class='container d-flex'>
+                <div class="card p-2" style='width:20%;'>
+                <img alt='Product' src="${pdict.product.url}" class='card-img' />
+                <span class='card-title'>${pdict.product.name}</span>
+                </div>
+
+                <div class="card" style='width:20%;'>
+                <img alt='Product' src="${pdict.product.url}" class='card-img' />
+                <span class='card-title'>${pdict.product.name}</span>
+                </div>
+            </div>
+            </div>
+
+            <div>
+            <a href="${URLUtils.url('AboutUs-Show')}">About US</a>
+            </div>
 </body> 
