@@ -24,7 +24,7 @@ kanban
     working[Working on This Functionality]
         find
     completed[Completed]
-        (inv1)[Internal Navigation]
+        inv1[Internal Navigation]
 ```
 
 
