@@ -20,7 +20,9 @@ flowchart TD
 
 kanban
     todo[Functionality to add]
+        find
     working[Working on This Functionality]
+        find
     completed[Completed]
         (inv1)[Internal Navigation]
 ```
