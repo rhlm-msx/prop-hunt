@@ -53,4 +53,6 @@
             <div>
             <a href="${URLUtils.url('AboutUs-Show')}">About US</a>
             </div>
+
+            <img alt='images' src="${URLUtils.url('brick_mainson_images/chain.png')}"/>
 </body> 
