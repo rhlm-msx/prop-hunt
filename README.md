@@ -18,6 +18,10 @@ flowchart TD
 
 ```mermaid
 
+kanban
+    find:
+        work
+
 ```
 
 
