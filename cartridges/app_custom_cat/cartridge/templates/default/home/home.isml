@@ -1,60 +1,29 @@
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prop Hunt</title> 
-<link rel="stylesheet" href="${URLUtils.staticURL('/css/bootstrap.css')}">
-</head>
-<body class="bg-dark text-bg-dark"> 
-    <div class="container py-5">
-    <h1 class="text-center mb-4">Prop Hunt</h1> 
-<!--
-    <div class="card p-5 my-5 fs-1">
-        ${Resource.msg('homepage.description', 'home', null)}
-    </div>
--->
-        <div id="textCardCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
+<isdecorate template="/common/layout/page">
+<div id="textCardCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <div class="card shadow-sm mx-auto" style="max-width: 600px;">
+        <img alt='images' class='card-img' src="${URLUtils.staticURL('/images/chain_khuli_ki_maan_khuli.png')}" />
+        <div class="card-body"> 
+        <h5 class="card-title">Chain Khuli Ki Main Khuli</h5> 
+        <p class="card-text">${Resource.msg('homepage.moto1', 'home', null)}</p> </div> 
+        </div> </div>
+        <div class="carousel-item">
+            <div class="card shadow-sm mx-auto" style="max-width: 600px;"> 
+            <img alt='images' class='card-img' src="${URLUtils.staticURL('/images/ra_one_ghibli_art.png')}"/>
+            <div class="card-body"> 
+            <h5 class="card-title">Ra.one</h5>
+            <p class="card-text"> ${Resource.msg('homepage.moto2', 'home', null)}</p> </div> </div> </div>
+        <div class="carousel-item">
             <div class="card shadow-sm mx-auto" style="max-width: 600px;">
-            <div class="card-body"> <h5 class="card-title">Chain Khuli Ki Main Khuli</h5> 
-            <p class="card-text">${Resource.msg('homepage.moto1', 'home', null)}</p> </div> 
-            </div> </div>
-            <div class="carousel-item">
-                <div class="card shadow-sm mx-auto" style="max-width: 600px;"> 
-                <div class="card-body"> <h5 class="card-title">Ra.one</h5>
-                <p class="card-text"> ${Resource.msg('homepage.moto2', 'home', null)}</p> </div> </div> </div>
-            <div class="carousel-item">
-                <div class="card shadow-sm mx-auto" style="max-width: 600px;">
-                <div class="card-body"> <h5 class="card-title">Malamaal Weekly</h5> <p class="card-text">${Resource.msg('homepage.moto3', 'home', null)}</p> </div> </div> </div> </div> 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#textCardCarousel" data-bs-slide="prev"> <span class="carousel-control-prev-icon"></span> </button> <button class="carousel-control-next" type="button" data-bs-target="#textCardCarousel" data-bs-slide="next"> 
-                    <span class="carousel-control-next-icon"></span> 
-                </button> 
-                </div> 
-            </div>
-            <script src="${URLUtils.staticURL('/js/bootstrap.bundle.min.js')}"> </script> 
+            <img alt='images' class='card-img' src="${URLUtils.staticURL('/images/malamaal_weekly_poster_gibli.png')}"/>
+            <div class="card-body"> <h5 class="card-title">Malamaal Weekly</h5> <p class="card-text">${Resource.msg('homepage.moto3', 'home', null)}</p> </div> </div> </div> </div> 
+                <button class="carousel-control-prev" type="button" data-bs-target="#textCardCarousel" data-bs-slide="prev"> <span class="carousel-control-prev-icon"></span> </button> <button class="carousel-control-next" type="button" data-bs-target="#textCardCarousel" data-bs-slide="next"> 
+                <span class="carousel-control-next-icon"></span> 
+            </button> 
+            </div> 
 
 
 
-            <div class='container'>
-            <h2>Explore Our Popular Products</h2>
-            <div class='container d-flex'>
-                <div class="card p-2" style='width:20%;'>
-                <img alt='Product' src="${pdict.product.url}" class='card-img' />
-                <span class='card-title'>${pdict.product.name}</span>
-                </div>
 
-                <div class="card" style='width:20%;'>
-                <img alt='Product' src="${pdict.product.url}" class='card-img' />
-                <span class='card-title'>${pdict.product.name}</span>
-                <button class='badge btn text-btn-primary text-bg-dark'>Add to Cart</button>
-                <button class='badge btn text-btn-primary text-bg-dark'>Wishlist</button>
-                </div>
-            </div>
-            </div>
-
-            <div>
-            <a href="${URLUtils.url('AboutUs-Show')}">About US</a>
-            </div>
-
-            <img alt='images' src="${URLUtils.url('brick_mainson_images/chain.png')}"/>
-</body> 
+</isdecorate>

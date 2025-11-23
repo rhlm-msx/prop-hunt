@@ -1,0 +1,8 @@
+<header class='w-100 p-5 m-2 bg-dark text-bg-dark'>
+<div class='container d-flex'>
+<h1 class="text-center mb-4 flex-grow-1">Prop Hunt</h1> 
+<span class='badge badge-primary'>
+<isinclude template="/components/header/miniCart"/>
+</span>
+</div>
+</header>

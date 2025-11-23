@@ -1,0 +1,24 @@
+<isdecorate template="/common/layout/page">
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addJs('/js/bootstrap.bundle.min.js');
+    assets.addCss('/css/bootstrap.css');
+</isscript>
+    <div class='container'>
+    <isinclude template="/components/header/search"/>
+    <h2>Explore Our Popular Products</h2>
+    <div class='container d-flex'>
+        <div class="card p-2" style='width:20%;'>
+        <img alt='Product' src="${pdict.product.url}" class='card-img' />
+        <span class='card-title'>${pdict.product.name}</span>
+        </div>
+
+        <div class="card" style='width:20%;'>
+        <img alt='Product' src="${pdict.product.url}" class='card-img' />
+        <span class='card-title'>${pdict.product.name}</span>
+        <button class='badge btn text-btn-primary text-bg-dark'>Add to Cart</button>
+        <button class='badge btn text-btn-primary text-bg-dark'>Wishlist</button>
+        </div>
+    </div>
+    </div>
+</isdecorate>

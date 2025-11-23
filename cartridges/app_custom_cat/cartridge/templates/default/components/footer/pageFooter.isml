@@ -1,0 +1,5 @@
+<div class='w-100 d-flex fixed-bottom fs-2'>
+    <a class="p-3 btn btn-primary flex-grow-1 text-center" href="${URLUtils.url('Home-Show')}"><span>Home</span></a>
+    <a class="p-3 btn btn-secondary flex-grow-1 text-center" href="${URLUtils.url('Store-Show')}"><span>Store</span></a>
+    <a class="p-3 btn btn-primary flex-grow-1 text-center" href="${URLUtils.url('AboutUs-Show')}"><span>About</span></a>
+</div>
