@@ -39,5 +39,25 @@ kanban
 ```
 
 
+> [!NOTE]
+> User Specific Functionality: That are used for exploring the offering of our ecommerice store.
+
+
+```mermaid
+
+kanban
+    todo[Functionality to add]
+        Registration
+        Login
+        prof1[Profile: Page]
+        prof2[Profile: Order History]
+        prof3[Profile: Shippment Tracking]
+        Checkout
+    working[Working on This Functionality]
+    completed[Completed]
+```
+
+
+
 
 
