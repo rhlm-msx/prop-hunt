@@ -22,5 +22,5 @@ watch:
 sandbox: dw.json
 	open "https://$(SANDBOX_NAME)/on/demandware.store/Sites-Site/"
 
-storefront: dw.json
+open: dw.json
 	open "https://$(SANDBOX_NAME)/on/demandware.store/Sites-$(SITE_NAME)-Site"
