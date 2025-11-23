@@ -17,7 +17,7 @@ flowchart TD
 
 ## Todo
 
-> ![NOTE]
+> [!NOTE]
 > Generic Functionality: That are used for exploring the offering of our ecommerice store.
 
 
