@@ -1,3 +1,5 @@
+SITE_NAME=brickmanson
+SANDBOX_NAME=$(shell cat dw.json | jq .hostname -r)
 install:
 	npm install
 
@@ -17,3 +19,8 @@ upload_all:
 watch:
 	npm run watch
 
+sandbox: dw.json
+	open "https://$(SANDBOX_NAME)/on/demandware.store/Sites-Site/"
+
+storefront: dw.json
+	open "https://$(SANDBOX_NAME)/on/demandware.store/Sites-$(SITE_NAME)-Site"
