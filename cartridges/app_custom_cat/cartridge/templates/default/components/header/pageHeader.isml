@@ -1,4 +1,4 @@
-<header class='w-100 p-5 m-2 bg-dark text-bg-dark'>
+<header class='w-100 bg-secondary text-bg-dark navbar'>
 <div class='container d-flex'>
 <h1 class="text-center mb-4 flex-grow-1">Prop Hunt</h1> 
 <span class='badge badge-primary'>
