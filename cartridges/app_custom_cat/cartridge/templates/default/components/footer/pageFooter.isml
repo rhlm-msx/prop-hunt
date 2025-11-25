@@ -9,9 +9,9 @@
         <br/>
         <span class="text-xs">Store</span>
     </a>
-    <a class="col" href="${URLUtils.url('Login-Show')}">
+    <a class="col" href="${URLUtils.url('Account-Show')}">
         <i class="fa fa-user" aria-hidden="true"></i>
         <br/>
-        <span class="text-xs">Account</span>
+        <span class="text-xs"><isinclude url="${URLUtils.url('Account-getName')}"/></span>
     </a>
 </div>
