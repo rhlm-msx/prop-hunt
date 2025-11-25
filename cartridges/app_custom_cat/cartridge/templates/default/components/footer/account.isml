@@ -1,0 +1,1 @@
+<span>${pdict.name == null ? 'Account' : 'Hi, ' + pdict.name}</span>
