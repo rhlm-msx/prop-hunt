@@ -3,7 +3,9 @@
 <isscript>
     var assets = require('*/cartridge/scripts/assets.js');
     assets.addJs('/js/bootstrap.bundle.min.js');
+    assets.addCss('/css/custom.css');
     assets.addCss('/css/bootstrap.css');
+    assets.addCss('/css/font-awesome.css');
 </isscript>
 
 <!DOCTYPE html>
@@ -18,12 +20,20 @@
         </isif>
         <isactivedatahead/>
         <isinclude template="/components/schema" />
+        <style>
+            body {
+                padding-bottom: 100px;
+            }
+            a {
+                color: white;
+            }
+        </style>
     </head>
-    <body class='bg-dark text-bg-dark'>
+    <body class='d-flex flex-column vh-100 bg-dark text-bg-dark'>
         ${dw.system.HookMgr.callHook('app.template.beforeHeader', 'beforeHeader', pdict) || ''}
-        <div class="page d-flex flex-column vh-100" data-action="${pdict.action}" data-querystring="${pdict.queryString}" >
+        <div class="position-relative page d-flex flex-column vh-100" data-action="${pdict.action}" data-querystring="${pdict.queryString}" >
             <isinclude template="/components/header/pageHeader" />
-            <div class="flex-grow-1 overflow-auto p-5 bg-dark">
+            <div class="main container-fluid p-2 flex-grow-1 overflow-auto bg-secondary">
                 <isreplace/>
             </div> 
             <isinclude template="/components/footer/pageFooter" />
