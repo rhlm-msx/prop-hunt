@@ -5,6 +5,7 @@
     assets.addCss('/css/bootstrap.css');
 </isscript>
     <div class='container'>
+    <isinclude url="${URLUtils.url('Page-IncludeHeaderMenu')}"/>
     <isinclude template="/components/header/search"/>
     <h2>Explore Our Popular Products</h2>
     <div class='container d-flex'>

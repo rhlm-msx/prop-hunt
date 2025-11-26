@@ -23,7 +23,11 @@
             </button> 
             </div> 
 
-
+    <div class="container home-categories homepage">
+        <div class="row home-main-categories no-gutters">
+            <isslot id="home-cate" description="Categories slots on the home page." context="global" />
+        </div>
+    </div>
 
 
 </isdecorate>
