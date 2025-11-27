@@ -1,0 +1,21 @@
+<isdecorate template="/common/layout/page">
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addJs('/js/bootstrap.bundle.min.js');
+    assets.addCss('/css/bootstrap.css');
+</isscript>
+
+<div class="container">
+    <h1 class='text-center'>Code Phat Gaya</h1>
+    <h2 class='text-center error-message'>${pdict.message}</h2>
+    <isif condition="${pdict.showError}">
+        <pre class='card bg-dark'><code>
+        <isprint value=${pdict.error.errorText} encoding="htmlcontent" />
+        <isif condition="${pdict.error.controllerName}">
+            in controller <span class="badge rounded-pill text-bg-danger">${pdict.error.controllerName}.js</span>
+        </isif>
+        </code></pre>
+    </isif>
+</div>
+
+</isdecorate>
